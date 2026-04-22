@@ -1,18 +1,32 @@
+import { useEffect, useState } from "react";
 import MovieRow from "../components/MovieRow";
-import { movie } from "../data/movie";
+import { getNowPlayingMovies, getUpcomingMovies } from "../data/movie";
 import Navbar from "../components/Navbar";
 import Heroarea from "../components/Heroarea";
 import Options from "../components/Options";
 import RecommendedSuffix from "../components/RecommendedSuffix";
 
 function Home() {
+  const [movies, setMovies] = useState([]);
+  const [upcomingMovies, setUpcomingMovies] = useState([]);
+
+  useEffect(() => {
+    async function fetchData() {
+      const nowPlaying = await getNowPlayingMovies();
+      const upcoming = await getUpcomingMovies();
+      setMovies(nowPlaying);
+      setUpcomingMovies(upcoming);
+    }
+    fetchData();
+  }, []);
+
   return (
     <div>
       <Navbar />
       <Options />
       <Heroarea />
-      <MovieRow title="Recommended movie" movie={movie} />
-      <MovieRow title="Trending Now" movie={movie} />
+      <MovieRow title="Recommended movies" movie={movies} />
+      <MovieRow title="Upcoming Movies" movie={upcomingMovies} />
       <RecommendedSuffix />
     </div>
   );
