@@ -1,5 +1,5 @@
 import { movie } from "../data/movie";
-function MovieCard({movie}){
+export default function MovieCard({movie}){
     return (
         <div>
             <img src= {movie.image} alt={movie.title}></img>
@@ -9,4 +9,3 @@ function MovieCard({movie}){
     )
 
 }
-export default MovieCard;

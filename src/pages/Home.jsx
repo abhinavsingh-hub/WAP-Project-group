@@ -3,6 +3,7 @@ import { movie } from "../data/movie";
 import Navbar from "../components/Navbar";
 import Heroarea from "../components/Heroarea";
 import Options from "../components/Options";
+import RecommendedSuffix from "../components/RecommendedSuffix";
 
 function Home() {
   return (
@@ -12,6 +13,7 @@ function Home() {
       <Heroarea />
       <MovieRow title="Recommended movie" movie={movie} />
       <MovieRow title="Trending Now" movie={movie} />
+      <RecommendedSuffix />
     </div>
   );
 }
