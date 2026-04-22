@@ -7,14 +7,13 @@ export default function Heroarea() {
   ];
 
   return (
-    <div className="relative overflow-hidden w-full bg-white-300 text-white h-[280px]">
+    <div className="group relative overflow-hidden w-full bg-white h-[280px] cursor-pointer">
 
       <div className="pointer-events-none absolute left-0 top-0 h-full w-10 bg-gradient-to-r from-blue-100 to-transparent z-10" />
       <div className="pointer-events-none absolute right-0 top-0 h-full w-10 bg-gradient-to-l from-red-100 to-transparent z-10" />
 
-      <div
-        className="flex w-max animate-marquee hover:[animation-play-state:paused]"
-      >
+      <div className="flex w-max animate-marquee group-hover:[animation-play-state:paused]">
+
         <div className="flex gap-6 px-4 mt-2">
           {images.map((src, i) => (
             <img
@@ -36,6 +35,7 @@ export default function Heroarea() {
             />
           ))}
         </div>
+
       </div>
     </div>
   );

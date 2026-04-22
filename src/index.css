@@ -12,3 +12,7 @@
 .animate-marquee {
   animation: marquee 25s linear infinite;
 }
+
+.group:hover .marquee {
+  animation-play-state: paused;
+}
