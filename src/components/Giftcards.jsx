@@ -24,7 +24,7 @@ export default function Giftcards() {
 
             <div className="max-w-7xl mx-auto py-10 px-4">
                 <div className="bg-white rounded-sm shadow-sm overflow-hidden min-h-[600px]">
-                    {/* Tab Switcher */}
+                    
                     <div className="flex border-b border-gray-200">
                         <div
                             onClick={() => setActiveTab('egift')}
