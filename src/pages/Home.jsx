@@ -5,6 +5,7 @@ import Navbar from "../components/Navbar";
 import Heroarea from "../components/Heroarea";
 import Options from "../components/Options";
 import RecommendedSuffix from "../components/RecommendedSuffix";
+import HandleMovies from "../components/MovieSection";
 
 function Home() {
   const [movies, setMovies] = useState([]);
