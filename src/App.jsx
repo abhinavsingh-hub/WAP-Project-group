@@ -1,14 +1,14 @@
-import { BrowserRouter as Router } from "react-router-dom";
-import AllRoutes from "./pages/AllRoutes";
+import { Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import MovieSection from "./components/MovieSection";
 
 function App() {
   return (
-    <Router>
-      <AllRoutes />
-    </Router>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/movies" element={<MovieSection />} />
+    </Routes>
   );
 }
 
 export default App;
-
-
