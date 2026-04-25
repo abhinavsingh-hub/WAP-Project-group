@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import Navbar from "./Navbar";
 import Options from "./Options";
+import Footer from "./Footer";
 
 export default function Giftcards() {
     return (
@@ -11,6 +12,7 @@ export default function Giftcards() {
                 <div className="text-black bg-gray-200 h-full w-full border border-red-500 text-center hover:text-red-500 text-sm transition-colors"><h4>E-Gift Cards</h4></div>
                 <div className="text-black bg-white-200 h-full w-full border border-red-500 text-center hover:text-red-500 text-sm transition-colors"><h4>Physical Gift Cards</h4></div>
             </div>
+            <Footer/>
         </div>
     );
 }

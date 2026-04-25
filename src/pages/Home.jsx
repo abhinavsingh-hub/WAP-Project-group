@@ -5,7 +5,7 @@ import Navbar from "../components/Navbar";
 import Heroarea from "../components/Heroarea";
 import Options from "../components/Options";
 import RecommendedSuffix from "../components/RecommendedSuffix";
-import HandleMovies from "../components/MovieSection";
+import Footer from "../components/Footer";
 
 function Home() {
   const [movies, setMovies] = useState([]);
@@ -29,6 +29,7 @@ function Home() {
       <MovieRow title="Recommended movies" movie={movies} />
       <MovieRow title="Upcoming Movies" movie={upcomingMovies} />
       <RecommendedSuffix />
+      <Footer/>
     </div>
   );
 }

@@ -4,6 +4,8 @@ import Options from "./Options";
 import Heroarea from "./Heroarea";
 import MovieCard from "./MovieCard";
 import { getNowPlayingMovies } from "../data/movie";
+import RecommendedSuffix from "./RecommendedSuffix";
+import Footer from "./Footer";
 
 export default function MovieSection() {
     const [movies, setMovies] = useState([]);
@@ -34,6 +36,8 @@ export default function MovieSection() {
                 </div>
                 
             </div>
+            <RecommendedSuffix/>
+            <Footer/>
         </div>
     );
 }
