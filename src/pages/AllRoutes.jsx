@@ -1,5 +1,5 @@
 import { Routes, Route } from "react-router";
-import Signin from "../components/signin";
+import Signin from "../components/Signin";
 import Home from "./Home";
 import Giftcards from "../components/Giftcards";
 import MovieSection from "../components/MovieSection";

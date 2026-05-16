@@ -1,16 +1,53 @@
-# React + Vite
+# BookMyShow Clone (WAP-Project)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive BookMyShow clone built with React, Vite, and Tailwind CSS.
 
-Currently, two official plugins are available:
+## 🚀 Deployed Link
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+**[Live Demo](https://wap-project-8ed6.vercel.app/)**
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## ✨ Features
 
-## Expanding the ESLint configuration
+- **Responsive Design**: Mobile-friendly layout with a functional hamburger menu.
+- **Dynamic Content**: Movie rows for "Recommended" and "Upcoming" movies.
+- **Interactive UI**: Horizontal scrolling categories and movie sections.
+- **Seamless Navigation**: Multi-page routing with React Router.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Tech Stack
+
+- **Frontend**: React (v19)
+- **Styling**: Tailwind CSS (v4)
+- **Build Tool**: Vite
+- **Routing**: React Router Dom
+
+## 💻 Local Setup
+
+1. **Clone the repository**
+
+   ```bash
+   git clone https://github.com/akhileshsude/WAP-Project.git
+   cd WAP-Project
+   ```
+
+2. **Install dependencies**
+
+   ```bash
+   npm install
+   ```
+
+3. **Run in development mode**
+
+   ```bash
+   npm run dev
+   ```
+
+4. **Build for production**
+   ```bash
+   npm run build
+   ```
+
+---
+
+_WAP Project - Developed by Wand Wisperers._

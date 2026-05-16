@@ -11,22 +11,25 @@ function MovieRow({ title, movie }) {
   };
 
   return (
-    <div className="mx-20 my-2 relative">
-      <h2 className=" text-2xl font-bold p-1">{title}</h2>
-      <div className=" flex overflow-auto shrink-0 gap-3" ref={scrollRef}>
+    <div className="w-full max-w-7xl mx-auto px-4 my-6 relative overflow-x-hidden">
+      <h2 className="text-xl md:text-2xl font-bold mb-4">{title}</h2>
+      <div 
+        className="flex overflow-x-auto gap-4 pb-4 no-scrollbar" 
+        ref={scrollRef}
+      >
         {movie.map((movie) => (
           <MovieCard key={movie.id} movie={movie} />
         ))}
       </div>
       <button
         onClick={scrollLeft}
-        className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-black text-white p-2 rounded-full opacity-75 hover:opacity-100"
+        className="absolute left-2 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black text-white w-10 h-10 rounded-full hidden md:flex items-center justify-center transition-all z-10"
       >
         ‹
       </button>
       <button
         onClick={scrollRight}
-        className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-black text-white p-2 rounded-full opacity-75 hover:opacity-100"
+        className="absolute right-2 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black text-white w-10 h-10 rounded-full hidden md:flex items-center justify-center transition-all z-10"
       >
         ›
       </button>

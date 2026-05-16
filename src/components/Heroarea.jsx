@@ -7,35 +7,31 @@ export default function Heroarea() {
   ];
 
   return (
-    <div className="group relative overflow-hidden w-full bg-white h-[280px] cursor-pointer">
-
-      <div className="pointer-events-none absolute left-0 top-0 h-full w-10 bg-gradient-to-r from-blue-100 to-transparent z-10" />
-      <div className="pointer-events-none absolute right-0 top-0 h-full w-10 bg-gradient-to-l from-red-100 to-transparent z-10" />
+    <div className="group relative overflow-hidden w-full bg-zinc-100 h-[150px] sm:h-[200px] md:h-[280px] cursor-pointer">
+      <div className="pointer-events-none absolute left-0 top-0 h-full w-10 sm:w-20 bg-gradient-to-r from-zinc-100 to-transparent z-10" />
+      <div className="pointer-events-none absolute right-0 top-0 h-full w-10 sm:w-20 bg-gradient-to-l from-zinc-100 to-transparent z-10" />
 
       <div className="flex w-max animate-marquee group-hover:[animation-play-state:paused]">
-
-        <div className="flex gap-6 px-4 mt-2">
+        <div className="flex gap-3 sm:gap-6 px-4 mt-2 h-full">
           {images.map((src, i) => (
             <img
               key={i}
               src={src}
-              className="h-[260px] w-auto rounded-xl object-cover"
+              className="h-[130px] sm:h-[180px] md:h-[260px] w-auto rounded-xl object-cover shadow-md"
               alt=""
             />
           ))}
         </div>
-
-        <div className="flex gap-6 px-4 mt-2">
+        <div className="flex gap-3 sm:gap-6 px-4 mt-2 h-full">
           {images.map((src, i) => (
             <img
               key={`dup-${i}`}
               src={src}
-              className="h-[260px] w-auto rounded-xl object-cover"
+              className="h-[130px] sm:h-[180px] md:h-[260px] w-auto rounded-xl object-cover shadow-md"
               alt=""
             />
           ))}
         </div>
-
       </div>
     </div>
   );
